@@ -23,8 +23,6 @@ body {
   margin: 2rem 0.5rem;
   display: -ms-grid;
   display: grid;
-  -ms-grid-rows: (1fr)[12];
-      grid-template-rows: repeat(12, 1fr);
   -ms-grid-columns: (1fr)[12];
       grid-template-columns: repeat(12, 1fr);
 }
@@ -89,8 +87,8 @@ body {
 
 @media (max-width: 750px) {
   .profile .img-div img {
-    min-width: 270px;
-    min-height: 270px;
+    min-width: 250px;
+    min-height: 250px;
   }
 }
 

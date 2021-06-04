@@ -20,7 +20,7 @@ body {
 .main {
   margin: 2rem 0.5rem;
   display: grid;
-  grid-template-rows: repeat(12, 1fr);
+  // grid-template-rows: repeat(12, 1fr); //need to find how to make this work without moving things way
   grid-template-columns: repeat(12, 1fr);
 }
 
