@@ -1,0 +1,12 @@
+footer {
+  grid-column: 1/13;
+  p {
+    text-align: center;
+    font-size: $sm-txt;
+    a {
+      color: inherit;
+      font-weight: 700;
+      text-decoration: none;
+    }
+  }
+}

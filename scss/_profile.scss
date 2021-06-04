@@ -1,0 +1,91 @@
+.profile {
+  grid-column: 1/13;
+  padding: 1rem;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 1rem;
+  @media (max-width: 550px) {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    max-width: 400px;
+    margin: 0 auto;
+  }
+
+  .img-div {
+    grid-column: 1/2;
+    img {
+      min-width: 250px;
+      min-height: 250px;
+      width: 100%;
+      height: 100%;
+      border-radius: 1rem;
+      @media (max-width: 750px) {
+        min-width: 270px;
+        min-height: 270px;
+      }
+    }
+  }
+  .text-div {
+    grid-column: 2/5;
+
+    .name-contact {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media (max-width: 750px) {
+        flex-direction: column;
+      }
+
+      .name-role {
+        .name {
+          font-size: $big-txt;
+          color: $gray1;
+          font-weight: 600;
+          margin-bottom: 0.5rem;
+        }
+        .role {
+          font-size: $md-txt;
+          color: $gray3;
+        }
+      }
+      .contact {
+        @media (max-width: 750px) {
+          margin-top: 1rem;
+        }
+        div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-bottom: 0.5rem;
+
+          span {
+            margin-left: 0.5rem;
+            p {
+              font-size: $md-txt;
+              color: $gray2;
+            }
+          }
+        }
+      }
+    }
+    .about {
+      margin-top: 3rem;
+      @media (max-width: 750px) {
+        margin-top: 0;
+      }
+
+      .about-text {
+        font-size: $md-txt;
+        color: $gray2;
+        margin: 2rem 0;
+      }
+      .about-text:last-child {
+        @media (max-width: 750px) {
+          display: none;
+        }
+      }
+    }
+  }
+}
