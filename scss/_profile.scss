@@ -1,5 +1,6 @@
 .profile {
   grid-column: 1/13;
+  grid-row: 1/2;
   padding: 1rem;
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
@@ -54,10 +55,11 @@
         @media (max-width: 750px) {
           margin-top: 1rem;
         }
-        div {
+        .email,
+        .phone {
           display: flex;
           align-items: center;
-          justify-content: center;
+          justify-content: flex-start;
           margin-bottom: 0.5rem;
 
           span {
