@@ -1,11 +1,14 @@
 .experiences {
-  grid-column: 4/13;
+  grid-column: 6/13;
   grid-row: 7/13;
 
   @media (max-width: 720px) {
-    //
+    grid-column: 1/13;
+    grid-row: 10/13;
   }
   @media (max-width: 500px) {
-    //
+    max-width: 320px;
+    grid-column: 1/13;
+    grid-row: 10/13;
   }
 }
