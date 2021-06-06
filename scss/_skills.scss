@@ -1,7 +1,6 @@
 .skills {
   grid-column: 1/6;
   grid-row: 2/5;
-  min-width: 300px;
 
   @media (max-width: 720px) {
     grid-column: 1/13;
