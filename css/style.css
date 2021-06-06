@@ -211,11 +211,159 @@ img {
 
 .skills {
   -ms-grid-column: 1;
-  -ms-grid-column-span: 3;
-  grid-column: 1/4;
+  -ms-grid-column-span: 4;
+  grid-column: 1/5;
   -ms-grid-row: 2;
   -ms-grid-row-span: 3;
   grid-row: 2/5;
+  min-width: 300px;
+}
+
+@media (max-width: 720px) {
+  .skills {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 12;
+    grid-column: 1/13;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+.skills h2 {
+  font-weight: 700;
+  color: #4f4f4f;
+  font-size: 1.125rem;
+}
+
+.skills .progress-area {
+  margin: 0.5rem 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+.skills .progress-area p {
+  font-size: 1rem;
+  color: #4f4f4f;
+  min-width: 110px;
+}
+
+.skills .progress-area .progress-bar {
+  min-width: 140px;
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 1rem;
+  margin-left: auto;
+  position: relative;
+}
+
+.skills .progress-area .progress-bar::before {
+  content: '';
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 100px;
+  height: 5px;
+  background-color: #2f80ed;
+  z-index: 1;
+  border-radius: 1rem;
+}
+
+.skills .react .progress-bar::before {
+  width: 100px;
+}
+
+.skills .js .progress-bar::before {
+  width: 120px;
+}
+
+.skills .css .progress-bar::before {
+  width: 130px;
+}
+
+.skills .vue .progress-bar::before {
+  width: 100px;
+}
+
+.skills .redux .progress-bar::before {
+  width: 110px;
+}
+
+.skills .native .progress-bar::before {
+  width: 120px;
+}
+
+.skills .figma .progress-bar::before {
+  width: 100px;
+}
+
+.skills .adobe .progress-bar::before {
+  width: 60px;
+}
+
+.skills .design {
+  margin-top: 1.5rem;
+}
+
+@media (max-width: 720px) {
+  .skills .design {
+    margin-top: 0;
+  }
+}
+
+@media (max-width: 580px) {
+  .skills .design .progress-area {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: start;
+        -ms-flex-align: start;
+            align-items: flex-start;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .skills .design {
+    margin-top: 1.5rem;
+  }
+  .skills .design .progress-area {
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
 }
 
 .blogs {

@@ -1,11 +1,114 @@
 .skills {
-  grid-column: 1/4;
+  grid-column: 1/5;
   grid-row: 2/5;
+  min-width: 300px;
 
   @media (max-width: 720px) {
-    //
+    grid-column: 1/13;
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
   }
   @media (max-width: 500px) {
-    //
+    flex-direction: column;
+  }
+
+  h2 {
+    font-weight: 700;
+    color: $gray2;
+    font-size: $md-txt;
+  }
+  .progress-area {
+    margin: 0.5rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    p {
+      font-size: $s-md-txt;
+      color: $gray2;
+      min-width: 110px;
+    }
+    .progress-bar {
+      min-width: 140px;
+      height: 5px;
+      background-color: $gary4;
+      border-radius: 1rem;
+      margin-left: auto;
+      position: relative;
+    }
+    .progress-bar::before {
+      content: '';
+      position: absolute;
+      left: 0;
+      top: 0;
+      width: 100px;
+      height: 5px;
+      background-color: $blue;
+      z-index: 1;
+      border-radius: 1rem;
+    }
+  }
+  .react {
+    .progress-bar::before {
+      width: 100px;
+    }
+  }
+  .js {
+    .progress-bar::before {
+      width: 120px;
+    }
+  }
+  .css {
+    .progress-bar::before {
+      width: 130px;
+    }
+  }
+  .vue {
+    .progress-bar::before {
+      width: 100px;
+    }
+  }
+  .redux {
+    .progress-bar::before {
+      width: 110px;
+    }
+  }
+  .native {
+    .progress-bar::before {
+      width: 120px;
+    }
+  }
+  .figma {
+    .progress-bar::before {
+      width: 100px;
+    }
+  }
+  .adobe {
+    .progress-bar::before {
+      width: 60px;
+    }
+  }
+
+  .design {
+    margin-top: 1.5rem;
+    @media (max-width: 720px) {
+      margin-top: 0;
+    }
+
+    @media (max-width: 580px) {
+      .progress-area {
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: center;
+      }
+    }
+    @media (max-width: 500px) {
+      margin-top: 1.5rem;
+      .progress-area {
+        flex-direction: row;
+        align-items: center;
+        justify-content: center;
+      }
+    }
   }
 }

@@ -1,4 +1,10 @@
 .hobbies {
   grid-column: 1/4;
   grid-row: 5/13;
+  @media (max-width: 720px) {
+    //
+  }
+  @media (max-width: 500px) {
+    //
+  }
 }
