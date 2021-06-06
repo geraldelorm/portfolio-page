@@ -86,7 +86,7 @@ img {
         -ms-flex-direction: column;
             flex-direction: column;
     height: 550px;
-    max-width: 300px;
+    max-width: 320px;
   }
 }
 
