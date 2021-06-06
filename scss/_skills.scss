@@ -1,4 +1,11 @@
 .skills {
   grid-column: 1/4;
   grid-row: 2/5;
+
+  @media (max-width: 720px) {
+    //
+  }
+  @media (max-width: 500px) {
+    //
+  }
 }

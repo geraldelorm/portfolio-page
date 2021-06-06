@@ -1,4 +1,95 @@
 .profile {
   grid-column: 1/13;
   grid-row: 1/2;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  height: 270px;
+  @media (max-width: 500px) {
+    flex-direction: column;
+    height: 550px;
+    max-width: 300px;
+  }
+
+  .img-div {
+    height: 100%;
+    width: 300px;
+    min-width: 200px;
+    @media (max-width: 500px) {
+      height: 55%;
+      width: 100%;
+    }
+    img {
+      height: 100%;
+      border-radius: 0.8rem;
+      @media (max-width: 500px) {
+        width: 100%;
+      }
+    }
+  }
+  .text-div {
+    margin-left: 1rem;
+    @media (max-width: 500px) {
+      margin-top: 1rem;
+      margin-left: 0rem;
+    }
+
+    .name-contact {
+      display: flex;
+      align-items: flex-start;
+      justify-content: space-between;
+      @media (max-width: 720px) {
+        flex-direction: column;
+      }
+
+      .name-role {
+        h1 {
+          font-size: $big-txt;
+          color: $gray2;
+        }
+        p {
+          font-size: $md-txt;
+          color: $gray3;
+        }
+      }
+
+      .contact {
+        @media (max-width: 720px) {
+          margin-top: 1rem;
+        }
+      }
+    }
+
+    .email,
+    .phone {
+      display: flex;
+      align-items: center;
+      justify-content: flex-start;
+
+      svg {
+        color: $gray2;
+      }
+      span {
+        margin-left: 0.5rem;
+        font-size: $md-txt;
+        color: $gray2;
+      }
+    }
+    .about {
+      margin-top: 2rem;
+      @media (max-width: 720px) {
+        margin-top: 0rem;
+      }
+      .about-text {
+        margin-top: 1rem;
+        font-size: $md-txt;
+        color: $gray3;
+      }
+      .about-text:last-child {
+        @media (max-width: 720px) {
+          display: none;
+        }
+      }
+    }
+  }
 }
