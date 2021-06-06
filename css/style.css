@@ -739,6 +739,12 @@ img {
   border: 1px solid #2f80ed;
 }
 
+.project-bar .tags .act {
+  color: white;
+  background-color: #2f80ed;
+  border: 1px solid #2f80ed;
+}
+
 .pro-con {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
@@ -861,6 +867,7 @@ img {
 
 @media (max-width: 720px) {
   .pro-con .projects:last-child {
+    max-width: 320px;
     margin: 1rem auto;
   }
 }
@@ -875,8 +882,61 @@ img {
   text-align: right;
 }
 
+@media (max-width: 720px) {
+  .pagination {
+    max-width: 320px;
+    margin: 0 auto;
+  }
+}
+
+.pagination span {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border: 1px solid #828282;
+  padding: 10px;
+  border-radius: 5px;
+  margin: 0.5rem;
+  font-weight: 700;
+  background-color: white;
+  cursor: pointer;
+}
+
+.pagination .act {
+  background-color: #2f80ed;
+  color: white;
+  border: 1px solid #2f80ed;
+}
+
+.pagination .no {
+  border: none;
+}
+
+.pagination span:hover {
+  background-color: #2f80ed;
+  color: white;
+  border: 1px solid #2f80ed;
+}
+
+@media (max-width: 720px) {
+  .pagination span {
+    width: 30px;
+    height: 30px;
+    padding: 5px;
+    border-radius: 5px;
+    margin: 0.1rem;
+  }
+}
+
 footer {
-  margin: 1rem 0.5rem;
+  margin: 10rem 0.5rem 1rem 0.5rem;
+}
+
+@media (max-width: 720px) {
+  footer {
+    margin: 2rem 0.5rem 1rem 0.5rem;
+  }
 }
 
 footer p {
